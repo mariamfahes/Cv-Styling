@@ -1,0 +1,199 @@
+
+figure, hgroup{
+    display: inline-block;
+    margin:20px;}
+
+
+hgroup{
+    padding-left:100px;
+}
+
+
+
+
+header {
+    background: rgb(138, 132, 132);
+    overflow: auto;  
+}
+.content{
+        width: 80%;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-top: 5px;
+        display: grid; 
+        
+}
+
+#competencies{
+width:90%;
+margin-top: 20%;
+
+}
+
+.skill{
+
+    color: white;
+    letter-spacing: 1px;
+    margin-right: 20%;
+    padding:3px;
+    padding-left: 5px;
+    
+}
+
+.skills-primary::before{
+    content: "Main";
+    color: black;
+}
+
+.skills-secondary::before{
+    content: "Other";
+    color: black;
+}
+.skills-primary{
+background-color:darkgray;
+}
+
+.skills-secondary{
+    background-color:lightgrey;
+    }
+
+.skill span{
+    padding: 5px;
+    display: inline-block;
+}
+
+[data-skill="1"] span{
+    display: inline-block;
+    width:10%;
+    background-color: red;
+}
+
+[data-skill="3"] span{
+    display: inline-block;
+    width:30%;
+    background-color: red;
+}
+
+[data-skill="5"] span{
+    display: inline-block;
+    width:50%;
+    background-color: red;
+}
+
+[data-skill="7"] span{
+    display: inline-block;
+    width:70%;
+    background-color: red;
+}
+
+[data-skill="9"] span{
+    display: inline-block;
+    width:90%;
+    background-color: red;
+}
+
+
+h3::before {
+   content: '\25cf';
+   color: red;
+}
+
+h3{
+  border-bottom: 1px gray solid;
+  width:90%;
+}
+
+.experience-date-separator{
+    color:red;
+}
+
+.experience-institution::before{
+    content:"@";
+    color:red;
+}
+
+.experience-location::before{
+    content:"in";
+    color: red;
+}
+.experience{
+    width: 80%;
+    
+}
+.experience-type{
+    font-weight: bolder;
+    color: red;
+
+}
+.experience-institution{
+color: red;
+font-style: normal;
+font-weight: lighter;
+}
+.experience-details{
+  
+  font-weight: lighter;
+}
+
+.perience-date{
+font-weight: lightgr;
+}
+
+.contacts dl{
+    overflow:hidden;
+    padding:0;
+    margin:0;
+
+}
+
+.contacts dl dt{
+    float:left;
+    width:150px;
+    padding:5px;
+    margin:0px;
+    color: white;
+    background-color: red;
+}
+
+.contact .contact-value a {
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+}
+
+.contact .contact-value{
+    float: left;
+    width: 300px;
+    margin:0px;
+    padding:5px;
+}
+
+@media screen and (min-width:800px){
+    #contact h3{
+        visibility: hidden;
+    }
+    #contact{
+    position:absolute;
+    top:-50px;
+    right:0px;
+    }
+    .contact .contact-value{
+        background-color:black;
+    }
+
+}
+h4{
+    color:red;
+}
+
+
+@media screen and (min-width:900px){
+    
+      .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        align-items: center;
+      }
+    }
